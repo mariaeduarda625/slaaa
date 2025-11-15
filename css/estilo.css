@@ -1,0 +1,101 @@
+/* Azul (#4AB1E0) — referência ao Sulley
+Verde (#8DD33F) — referência ao Mike
+Roxo claro (#A786C9) — para detalhes ou botões */
+
+.preta{
+    color:  #212529;
+}
+.circle-img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  background-color: #4AB1E0; /* azul de Monstros S.A. */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.circle-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.bntcor{
+  background-color:#4AB1E0;
+}
+.footer{
+  background-color:#4ab1e0;
+}
+header.pers {
+  padding-top: 10.5rem;
+  padding-bottom: 6rem;
+  text-align: center;
+  color: #fff;
+  background-image: url("../img/Personagens/fundopers.png");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+}
+.imgpers {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 10px;
+}
+
+.desc {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+a:link {
+  color: rgb(0, 0, 0);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: rgb(0, 0, 0);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(0, 0, 0);
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: rgb(0, 0, 0);
+  background-color: transparent;
+  text-decoration: underline;
+}
+/* ===== RESPONSIVIDADE ===== */
+@media (max-width: 769px) {
+    .row {
+        display: flex;
+        flex-direction: column !important; /* Imagem em cima, texto embaixo */
+        align-items: center;
+        text-align: center;
+    }
+
+    .col {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .imgpers {
+        max-width: 300px; /* Ajusta o tamanho da imagem para celular */
+    }
+
+    .desc {
+        font-size: 16px;
+        text-align: center !important; /* Centraliza o texto no celular */
+        margin-top: 10px;
+    }
+}
+
+
