@@ -5,6 +5,11 @@ Roxo claro (#A786C9) — para detalhes ou botões */
 .preta{
     color:  #212529;
 }
+
+.ti{
+ color:  #4AB1E0;
+ 
+}
 .circle-img {
   width: 140px;
   height: 140px;
@@ -33,7 +38,18 @@ header.pers {
   padding-bottom: 6rem;
   text-align: center;
   color: #fff;
-  background-image: url("../img/Personagens/fundopers.png");
+  background-image: url("https://i.pinimg.com/1200x/d2/e4/30/d2e4301fe1344d5d9394691e08d329c3.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+}
+header .curiosi{
+  padding-top: 10.5rem;
+  padding-bottom: 6rem;
+  text-align: center;
+  color: #fff;
+  background-image: url(../img/curiosidade/fundo.png);
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -73,6 +89,14 @@ a:active {
   background-color: transparent;
   text-decoration: underline;
 }
+
+.bloco-colorido {
+    background-color: #4AB1E0;
+    padding: 15px;
+    border-radius: 12px;
+    max-width: 600px;
+    margin: 0 auto;
+}
 /* ===== RESPONSIVIDADE ===== */
 @media (max-width: 769px) {
     .row {
@@ -92,10 +116,78 @@ a:active {
     }
 
     .desc {
-        font-size: 16px;
+        font-size: 18px;
         text-align: center !important; /* Centraliza o texto no celular */
         margin-top: 10px;
     }
+
 }
+
+
+.titulo-curiosidades {
+    color: #5c00a1;
+    font-weight: 700;
+}
+.btn-curiosidade {
+    display: block;
+    margin: 0 auto;
+}
+
+/* Cores  cards */
+.card-1 { background-color: #d5e8ff; }   /* Azul claro */
+.card-2 { background-color: #f8d3ff; }   /* Rosa Boo */
+.card-3 { background-color: #d1ffd6; }   /* Verde Mike */
+.card-4 { background-color: #fff3c4; }   /* Amarelo portas */
+
+
+.card-curiosidade {
+    border: none;
+    border-radius: 15px;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    overflow: hidden;
+    animation: surgir 0.8s ease forwards;
+    opacity: 0;
+}
+
+
+@keyframes surgir {
+    from {
+        transform: translateY(40px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+.card-curiosidade:hover {
+    transform: scale(1.04);
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+
+.btn-curiosidade {
+    background-color: #7b2cbf;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    transition: 0.25s;
+}
+
+.btn-curiosidade:hover {
+    background-color: #5a189a;
+    transform: scale(1.07);
+}
+
+/* Imagem */
+.card-curiosidade img {
+    border-radius: 10px;
+   
+}
+
 
 
