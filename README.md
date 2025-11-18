@@ -1,3 +1,2 @@
-# slaaa
-
-https://mariaeduarda625.github.io/slaaa/
+# mostros
+https://mariaeduarda625.github.io/mostros/
